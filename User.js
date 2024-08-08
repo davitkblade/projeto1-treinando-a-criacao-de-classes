@@ -1,18 +1,22 @@
 class User {
-    constructor(fullname, passaword,email){
-      this.fullname = fullname;
-      this.password= passaword;
-      this.email = email;
+    constructor(fullname, password,email){
+      this.fullname = fullname
+      this.password = password
+      this.email = email
     }
+    login(email, password) {
+        if (this.email === email && this.password === password) {
+            console.log("o login foi um sucesso!")
+        } else {
+            console.log("as credenciais estão erradas, reveja!")
+        }
+    }
+}
 
-login(email, password) {
-    if (this.email ===email && this.passwrod === password) {
-        console.log("Login bem-sucedido");
-    } else {
-        console.log("Email ou senha estão incorretos, reveja por-favor!");
-    }
-}
-}
-const user = new User('Davi', 'davisousa@gmail', 'goleirodark9')
-  user.login('davisousa@gmail','goleirodark9')
+const user = new User(
+  'Davi',
+  'davisousa@gmail',
+  'goleirodark9'
+)
+user.login('davisousa@gmail','goleirodark9')
         
