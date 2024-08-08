@@ -1,4 +1,3 @@
-// criando as primeiras classes
 class User {
     constructor(fullname, passaword,email){
       this.fullname = fullname;
@@ -15,4 +14,5 @@ login(email, password) {
 }
 }
 const user = new User('Davi', 'davisousa@gmail', 'goleirodark9')
+  user.login('davisousa@gmail','goleirodark9')
         
